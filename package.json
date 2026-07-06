@@ -1,0 +1,14 @@
+{
+  "name": "playwright-daily-exercises",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:report": "npx playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "js-yaml": "^4.3.0"
+  }
+}

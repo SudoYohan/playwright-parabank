@@ -1,0 +1,178 @@
+baseURL: https://parabank.parasoft.com/parabank
+pages:
+  home:
+    path: /index.htm
+    title: ParaBank
+    actions:
+      login:
+        selector: "input[type='submit'][value='Log In']"
+        description: "Submit the login form"
+      forgotLogin:
+        selector: "a:has-text('Forgot login info?')"
+        description: "Open forgot login info page"
+      register:
+        selector: "a:has-text('Register')"
+        description: "Open the registration page"
+      topMenuAdminPage:
+        selector: "#headerPanel ul.leftmenu a:has-text('Admin Page')"
+        description: "Open admin page from the top menu"
+      topMenuAboutUs:
+        selector: "#headerPanel ul.leftmenu a:has-text('About Us')"
+        description: "Open about us from the top menu"
+      topMenuServices:
+        selector: "#headerPanel ul.leftmenu a:has-text('Services')"
+        description: "Open services from the top menu"
+      topMenuProducts:
+        selector: "#headerPanel ul.leftmenu a:has-text('Products')"
+        description: "Open products from the top menu"
+      topMenuLocations:
+        selector: "#headerPanel ul.leftmenu a:has-text('Locations')"
+        description: "Open locations from the top menu"
+      topMenuHome:
+        selector: "#headerPanel ul.button a:has-text('home')"
+        description: "Open the home page from the top button menu"
+      topMenuAbout:
+        selector: "#headerPanel ul.button a:has-text('about')"
+        description: "Open the about page from the top button menu"
+      topMenuContact:
+        selector: "#headerPanel ul.button a:has-text('contact')"
+        description: "Open the contact page from the top button menu"
+      topLogo:
+        selector: "#topPanel img.logo"
+        description: "Open the root index page via the logo"
+      atmWithdrawFunds:
+        selector: "ul.services a:has-text('Withdraw Funds')"
+        description: "Open withdraw funds service"
+      atmTransferFunds:
+        selector: "ul.services a:has-text('Transfer Funds')"
+        description: "Open transfer funds service"
+      atmCheckBalances:
+        selector: "ul.services a:has-text('Check Balances')"
+        description: "Open check balances service"
+      atmMakeDeposits:
+        selector: "ul.services a:has-text('Make Deposits')"
+        description: "Open make deposits service"
+      onlineBillPay:
+        selector: "ul.servicestwo a:has-text('Bill Pay')"
+        description: "Open online bill pay"
+      onlineAccountHistory:
+        selector: "ul.servicestwo a:has-text('Account History')"
+        description: "Open online account history"
+      onlineTransferFunds:
+        selector: "ul.servicestwo a:has-text('Transfer Funds')"
+        description: "Open online transfer funds"
+      servicesReadMore:
+        selector: "#rightPanel p.more a[href^='services.htm']"
+        description: "Open the services read more page"
+      newsReadMore:
+        selector: "#rightPanel p.more a[href^='news.htm']"
+        description: "Open the news read more page"
+      newsItem1:
+        selector: "ul.events a:has-text('ParaBank Is Now Re-Opened')"
+        description: "Open latest news item 1"
+      newsItem2:
+        selector: "ul.events a:has-text('New! Online Bill Pay')"
+        description: "Open latest news item 2"
+      newsItem3:
+        selector: "ul.events a:has-text('New! Online Account Transfers')"
+        description: "Open latest news item 3"
+      footerHome:
+        selector: "#footerPanel ul li a:has-text('Home')"
+        description: "Open home from footer"
+      footerAboutUs:
+        selector: "#footerPanel ul li a:has-text('About Us')"
+        description: "Open about us from footer"
+      footerServices:
+        selector: "#footerPanel ul li a:has-text('Services')"
+        description: "Open services from footer"
+      footerProducts:
+        selector: "#footerPanel ul li a[href*='products.jsp']"
+        description: "Open products from footer"
+      footerLocations:
+        selector: "#footerPanel ul li a:has-text('Locations')"
+        description: "Open locations from footer"
+      footerForum:
+        selector: "#footerPanel ul li a[href*='forums.parasoft.com']"
+        description: "Open forum from footer"
+      footerSitemap:
+        selector: "#footerPanel ul li a:has-text('Site Map')"
+        description: "Open the site map from footer"
+      footerContactUs:
+        selector: "#footerPanel ul li a:has-text('Contact Us')"
+        description: "Open contact us from footer"
+      footerVisitWebsite:
+        selector: "#footerPanel ul li a:has-text('www.parasoft.com')"
+        description: "Open the company website from footer"
+  login:
+    path: /index.htm
+    title: ParaBank
+    actions:
+      username:
+        selector: "input[name='username']"
+      password:
+        selector: "input[name='password']"
+      submit:
+        selector: "input[type='submit'][value='Log In']"
+        description: "Submit the login form"
+  lookup:
+    path: /lookup.htm
+    title: ParaBank | Customer Lookup
+    actions:
+      firstName:
+        selector: "input[name='firstName']"
+      lastName:
+        selector: "input[name='lastName']"
+      addressStreet:
+        selector: "input[name='address.street']"
+      city:
+        selector: "input[name='address.city']"
+      state:
+        selector: "input[name='address.state']"
+      zipCode:
+        selector: "input[name='address.zipCode']"
+      ssn:
+        selector: "input[name='ssn']"
+      submit:
+        selector: "input[type='submit'][value='Find My Login Info']"
+  contact:
+    path: /contact.htm
+    title: ParaBank | Customer Care
+    actions:
+      name:
+        selector: "input[name='name']"
+      email:
+        selector: "input[name='email']"
+      phone:
+        selector: "input[name='phone']"
+      message:
+        selector: "textarea[name='message']"
+      submit:
+        selector: "input[type='submit'][value='Send to Customer Care']"
+  register:
+    path: /register.htm
+    title: ParaBank | Register for Free Online Account Access
+    actions:
+      firstName:
+        selector: "#customer\\.firstName"
+      lastName:
+        selector: "#customer\\.lastName"
+      address:
+        selector: "#customer\\.address\\.street"
+      city:
+        selector: "#customer\\.address\\.city"
+      state:
+        selector: "#customer\\.address\\.state"
+      zipCode:
+        selector: "#customer\\.address\\.zipCode"
+      phoneNumber:
+        selector: "#customer\\.phoneNumber"
+      ssn:
+        selector: "#customer\\.ssn"
+      username:
+        selector: "#customer\\.username"
+      password:
+        selector: "#customer\\.password"
+      repeatedPassword:
+        selector: "#repeatedPassword"
+      registerButton:
+        selector: "input[type='submit'][value='Register']"
