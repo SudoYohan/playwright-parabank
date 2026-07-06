@@ -1,0 +1,13 @@
+{
+  "firstName": "Test",
+  "lastName": "User",
+  "address": "123 Test St",
+  "city": "Testville",
+  "state": "TS",
+  "zipCode": "12345",
+  "phoneNumber": "555-555-5555",
+  "ssn": "123-45-6789",
+  "username": "user_1783334700302",
+  "password": "Password123!",
+  "createdAt": "2026-07-06T10:45:01.895Z"
+}
